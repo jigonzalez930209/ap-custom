@@ -1,0 +1,15 @@
+---
+application:
+  name: "ap-custom"
+  project: "apiTest"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "testApi"
+  version: "4.4"
+routers:
+- name: "main-ap-custom"
+  routes:
+  - application_name: "ap-custom"
+    paths:
+    - "/*"
